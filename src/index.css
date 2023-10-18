@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  *{
+    text-decoration: none !important;
+    list-style: none;
+  }
+  
+  .popularMovies .slick-slide {
+    margin: 0 10px;
+  }
+  /* .slick-list {
+    margin: 0 -10px;
+  } */
+  body{
+    background-color: #1C2134;
+    color:#fff ;
+  }
+  :root{
+    --mainColor: rgb(15, 158, 158);
+  }
+  .movies{
+    /* height: 350px; */
+   /* padding: 10px; */
+   border-radius: 5px;
+position: relative;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.moviesContent{
+   display: none;
+   padding: 10px;
+   transition: 0.4s; 
+   overflow: hidden;
+   
+   
+}
+.movies:hover .moviesContent{
+   background: rgba(15, 158, 158, 0.642);
+position: absolute;
+inset: 0;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+text-align: center;
+color: #fff;
+border-radius: 5px;
+
+}
+.movies img{
+   border-radius: 5px;
+}
+ 
+
+  .mainColor{
+   color: rgba(15, 158, 158, 0.642);
+  }
+  .lightBg{
+    background: rgba(15, 158, 158, 0.642);
+    
+  }
+  .mainBtn{
+    border-radius: 4px;
+    background: rgb(236, 255, 169);
+    border: 1px solid  transparent;
+    color: #000;
+    width: 90%;
+    text-align: center;
+    padding: 10px 5px;
+    margin-bottom: -5px;
+ 
+  }
+
+    .rating{
+      color: rgb(225, 157, 30);
+    }
+  .mainBtn:hover{
+    background: transparent;
+    border: 1px solid  rgb(236, 255, 169);
+    color: #000;
+    font-weight: bold;
+  }
+
+  .img{
+    height: 500px;
+  }
